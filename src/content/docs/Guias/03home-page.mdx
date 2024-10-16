@@ -1,0 +1,72 @@
+---
+title: Pantalla de Inicio
+---
+
+import Callout from "@/components/Callout.astro";
+import Card from "@/components/Card.astro";
+import { Cat } from 'lucide-react';
+
+¡Ya estás dentro! En esta guía, te mostraremos cómo acceder a los ejercicios y resolverlos. Sigue estos sencillos pasos para comenzar.
+
+<Callout variant="success">
+¡Bienvenido! Aprende a navegar por la plataforma y aprovecha al máximo los recursos disponibles.
+</Callout>
+
+## 1. Temas
+
+Estos son los temas disponibles en PlaygroundJDC:
+
+<Card title="Golang" color="Pink">
+  Golang, o simplemente Go, es un lenguaje de programación de código abierto creado por Google. Es conocido por su simplicidad, eficiencia y capacidades para manejar concurrencia, lo que lo hace ideal para la construcción de aplicaciones escalables y de alto rendimiento.
+</Card>
+
+<Card title="Javascript" icon={Cat}>
+  JavaScript es un lenguaje de programación popular utilizado principalmente para el desarrollo web. Permite crear sitios web interactivos y dinámicos, y también se puede usar en el backend con tecnologías como Node.js. Es un lenguaje esencial para el desarrollo web moderno.
+</Card>
+
+<Card title="Python" icon={Cat} color="Red">
+  Python es un lenguaje de programación versátil y fácil de aprender, conocido por su sintaxis clara y concisa. Es ampliamente utilizado en diversas áreas como el desarrollo web, la ciencia de datos, la inteligencia artificial y la automatización de tareas.
+</Card>
+
+<Card title="Fundamentos de programación" color="Green">
+  Los fundamentos de programación son los conceptos básicos que todo programador debe conocer, como variables, estructuras de control (condicionales y bucles), funciones y algoritmos. Estos conceptos son esenciales para aprender cualquier lenguaje de programación.
+</Card>
+
+<Card title="Programación orientada a objetos" icon={Cat} color="Orange">
+  La programación orientada a objetos (POO) es un paradigma de programación que utiliza "objetos" para representar datos y métodos relacionados. Los conceptos clave de la POO incluyen clases, herencia, polimorfismo y encapsulamiento, que ayudan a estructurar el código de manera modular y reutilizable.
+</Card>
+
+<Card title="Retos y ejercicios de programación" color="Teal">
+  Los retos y ejercicios de programación son actividades prácticas diseñadas para mejorar las habilidades de los programadores. Ayudan a aplicar los conocimientos adquiridos, resolver problemas, y desarrollar un pensamiento lógico y algorítmico.
+</Card>
+
+<Callout variant="info">
+Nuevos temas y ejercicios se agregarán periódicamente, ¡así que mantente atento a las actualizaciones!
+</Callout>
+
+![Inicio](src/assets/inicio.png)
+
+## 2. Lista de Ejercicios
+
+Una vez que elijas un tema, encontrarás los ejercicios organizados en una lista. Cada ejercicio muestra indicadores de título, dificultad y lenguaje.
+
+<Callout variant="warning">
+Asegúrate de revisar la dificultad del ejercicio antes de comenzar, para elegir uno adecuado a tu nivel.
+</Callout>
+
+![Titulo](src/assets/titulo.png)
+
+Al seleccionar un ejercicio, accederás a una página con una descripción detallada y un editor de código para que puedas probar tus soluciones.
+
+![Ejercicios](src/assets/ejercicios.png)
+
+La pantalla de ejercicios está dividida en dos secciones principales:
+
+- **Sección izquierda**: Muestra la narrativa del ejercicio, que incluye una descripción detallada del problema, los requisitos y ejemplos de entrada y salida. Aquí se explican claramente las condiciones del ejercicio y se proporcionan las especificaciones necesarias para resolverlo.
+
+- **Sección derecha**: Contiene un editor de código interactivo basado en Monaco. Este editor ofrece una experiencia de escritura fluida, con características como resaltado de sintaxis, autocompletado y soporte para varios lenguajes de programación. Puedes escribir, probar y depurar tu código directamente desde esta sección.
+
+
+<Callout variant="tip">
+Usa el editor de código para practicar. No temas equivocarte, la práctica es la clave para aprender.
+</Callout>

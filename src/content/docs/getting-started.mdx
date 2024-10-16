@@ -4,51 +4,63 @@ hide_breadcrumbs: true
 ---
 import Callout from "@/components/Callout.astro";
 
-**_Celestial Docs_** is a documentation theme built on top of the [Astro](https://astro.build/) framework. This guide will help you get started with a new project. 
-
-## Create a new project
-
-To create your own documentation site using CelestialDocs, follow these steps:
-- Visit the [CelestialDocs GitHub](https://github.com/HYP3R00T/CelestialDocs) repository.
-- Click on the "Use this template" button.
-- Follow the prompts to create a new repository using this template.
+**_PlaygroundJDC_** Es una aplicación web y de escritorio para aprender a programar. 
 
 <Callout variant="info">
-Try CelestialDocs in your browser: [open the template on StackBlitz](https://stackblitz.com/github/HYP3R00T/CelestialDocs)
+PlaygroundJDC es una aplicación construida con tecnologías como Python, Javascipt, Electron y Go.
 </Callout>
 
-## Local Setup
-After creating your repository, follow these steps to set up the project locally:
+## Setup Local
+Después de crear tu repositorio local, sigue estos pasos para construir tu propia instancia del proyecto:
 
-Clone your repository:
+Clona el repositorio del backend:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/JosephSC0121/Playground-api
+```
+Para configurar tu backend en windows:
+
+```bash
+cd Playground-api
+copy ".env-dev" ".env"
 ```
 
-Install dependencies:
+Para configurar tu backend en Linux:
 
 ```bash
+cd Playground-api
+cp .env-dev .env
+```
+
+<Callout variant="warning">
+Recuerda que en el .env tienes que poner tus credenciales de la base de datos, token OPENAI y auth keys. 
+</Callout>
+
+una vez configurado el .env:
+
+```bash
+docker compose up
+```
+Frontend:
+```bash
+git clone https://github.com/JosephSC0121/Playgroud-app
+cd Playground-app
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
+Code Executor:
+```bash
+git clone https://github.com/JosephSC0121/Playground_code_executor
+cd Playground_code_executor
+go run main.go run standalone
+```
 
-Your documentation site will be available at `http://localhost:4321`.
 
-## Customizing Your Documentation
-CelestialDocs is built to be highly customizable. You can start editing the markdown files in the content folder to create your own documentation pages.
 
-To add new pages or sections, simply create new markdown files and folders inside the content directory, following the existing structure.
+Tu backend estará disponible en `http://localhost:80`.
 
-## Next Steps
+## Revisa la documentación de la api
+Para estar al tanto de los endpoints puedes revisar la documentación en `http://localhost:80/docs` 
 
-- **Configure:** Learn about common options in ["Guides"](/guides).
-- **Authoring Content in Markdown:** Learn about options and features of ["Markdown"](/guides/create-user) guide.
-- **Components:** Discover built-in callout and more in the ["Components"](/custom-components) guide.
-- **Deploy:** Publish your work with the ["Deploy your site"](/resources/deployment) guide in the Astro docs.
+## Aplicación de escritorio
+Al ejecutar los comandos del frontend se ejecutará tu app de electron y en tu navegador en `http://localhost:5173`
