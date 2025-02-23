@@ -3,7 +3,9 @@
 ## 📖 About Playground
 Playground is an interactive platform designed for learning programming and mathematics. Users can engage with coding exercises, explore fundamental programming concepts, and receive AI-driven assistance.
 
+![Screenshot 2025-02-22 224902](https://github.com/user-attachments/assets/b92e3ba6-2a6f-4f4e-a412-ec4e59320240)
 ---
+
 
 ## 🔧 Features
 - **Interactive Coding**: Solve programming exercises with real-time feedback.
